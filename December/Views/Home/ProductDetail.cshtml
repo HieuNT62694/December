@@ -1,0 +1,129 @@
+﻿
+@{
+    ViewData["Title"] = "ProductDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" type="text/css" href="~/product/fonts/themify/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="~/product/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="~/product/fonts/elegant-font/html-css/style.css">
+    <link rel="stylesheet" type="text/css" href="~/product/vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="~/product/vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="~/product/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="~/product/vendor/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="~/product/vendor/noui/nouislider.min.css">
+    <link rel="stylesheet" type="text/css" href="~/product/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/product/css/main.css">
+
+    <!-- Product Detail -->
+    <div class="container bgwhite p-t-35 p-b-80">
+        <div class="flex-w flex-sb">
+            <div class="w-size13 p-t-30 respon5">
+                <div class="wrap-slick3 flex-sb flex-w">
+                    <div class="wrap-slick3-dots"></div>
+
+                    <div class="slick3">
+                        <div class="item-slick3" data-thumb="~/images/product/thumb-item-01.jpg">
+                            <div class="wrap-pic-w">
+                                <img src="~/images/product/product-detail-01.jpg" alt="IMG-PRODUCT">
+                            </div>
+                        </div>
+
+                        <div class="item-slick3" data-thumb="~/images/product/product-detail-02.jpg">
+                            <div class="wrap-pic-w">
+                                <img src="~/images/product/product-detail-02.jpg" alt="IMG-PRODUCT">
+                            </div>
+                        </div>
+
+                        <div class="item-slick3" data-thumb="~/images/product/thumb-item-03.jpg">
+                            <div class="wrap-pic-w">
+                                <img src="~/images/product/product-detail-03.jpg" alt="IMG-PRODUCT">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-size14 p-t-30 respon5">
+                <h4 class="product-detail-name m-text16 p-b-13">
+                    Boxy T-Shirt with Roll Sleeve Detail
+                </h4>
+
+                <span class="m-text17">
+                    $22
+                </span>
+
+                <p class="s-text8 p-t-10">
+                    Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                </p>
+
+                <div class="p-t-33 p-b-60">
+
+                    <div class="flex-r-m flex-w p-t-10">
+                        <div class="w-size16 flex-m flex-w">
+                            <div class="flex-w bo5 of-hidden m-r-22 m-t-10 m-b-10">
+                                <button class="btn-num-product-down color1 flex-c-m size7 bg8 eff2">
+                                    <i class="fs-12 fa fa-minus" aria-hidden="true"></i>
+                                </button>
+
+                                <input class="size8 m-text18 t-center num-product" type="number" name="num-product" value="1">
+
+                                <button class="btn-num-product-up color1 flex-c-m size7 bg8 eff2">
+                                    <i class="fs-12 fa fa-plus" aria-hidden="true"></i>
+                                </button>
+                            </div>
+
+                            <div class="btn-addcart-product-detail size9 trans-0-4 m-t-10 m-b-10">
+                                <button class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="wrap-dropdown-content bo6 p-t-15 p-b-14 active-dropdown-content">
+                    <h5 class="js-toggle-dropdown-content flex-sb-m cs-pointer m-text19 color0-hov trans-0-4">
+                        Description
+                        <i class="down-mark fs-12 color1 fa fa-minus dis-none" aria-hidden="true"></i>
+                        <i class="up-mark fs-12 color1 fa fa-plus" aria-hidden="true"></i>
+                    </h5>
+
+                    <div class="dropdown-content dis-none p-t-15 p-b-23">
+                        <p class="s-text8">
+                            Fusce ornare mi vel risus porttitor dignissim. Nunc eget risus at ipsum blandit ornare vel sed velit. Proin gravida arcu nisl, a dignissim mauris placerat
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Container Selection -->
+    <div id="dropDownSelect1"></div>
+    <div id="dropDownSelect2"></div>
+
+    <script type="text/javascript" src="~/product/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="~/product/vendor/animsition/js/animsition.min.js"></script>
+    <script type="text/javascript" src="~/product/vendor/bootstrap/js/popper.js"></script>
+    <script type="text/javascript" src="~/product/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/product/vendor/select2/select2.min.js"></script>
+	<script type="text/javascript">
+		$(".selection-1").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect2')
+		});
+	</script>
+    <script type="text/javascript" src="~/product/vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="~/product/js/slick-custom.js"></script>
+    <script type="text/javascript" src="~/product/vendor/sweetalert/sweetalert.min.js"></script>
+    <script src="~/product/js/main.js"></script>
